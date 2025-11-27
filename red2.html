@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Door of Destiny</title>
+  <style>
+    .text {
+      font-size: 2vw;
+      color: rgb(255, 221, 0);
+      text-shadow: 0 0 20px rgb(255, 247, 0);
+      text-align: center;
+    }
+
+    #tunnel, #scroll {
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgb(255, 0, 0);
+      transition: 0.3s ease;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+
+    #tunnel:hover, #scroll:hover {
+      box-shadow: 0 0 20px rgb(255, 213, 0);
+      transform: scale(1.1);
+    }
+
+    .choice-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: 5vw;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+
+    .label-container {
+      display: flex;
+      justify-content: center;
+      gap: 8vw;
+      margin-top: 10px;
+      font-size: 1.2vw;
+    }
+
+    .label-container p {
+      color: rgb(255, 255, 0);
+      text-shadow: 0 0 20px rgb(255, 0, 0);
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      .choice-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .label-container {
+        flex-direction: column;
+        align-items: center;
+        font-size: 3.5vw;
+        gap: 1rem;
+      }
+
+      .text {
+        font-size: 4vw;
+      }
+
+      h1 {
+        font-size: 8vw;
+      }
+    }
+  </style>
+</head>
+<body style="background-image: url(afterbutton.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
+  <h1 style="color: rgb(255, 0, 0); text-shadow: 0 0 20px rgb(255, 0, 0); text-align: center; font-size: 6vw;">YOU PRESSED IT!!</h1>
+
+  <p class="text">A scroll unrolls from the wall, and a scary secret tunnel opens on the floor.</p>
+  <p class="text">You hear footsteps approaching — someone (or something) is coming fast.<br>You must choose quickly:</p>
+
+  <div class="choice-container">
+    <a href="tunnel.html">
+      <img id="tunnel" src="tunnelcard.png" alt="Tunnel">
+    </a>
+    <a href="scroll.html">
+      <img id="scroll" src="scrollblur.png" alt="Scroll">
+    </a>
+  </div>
+
+  <div class="label-container">
+    <p>🕳️ Jump into the secret tunnel</p>
+    <p>📜 Read the scroll</p>
+  </div>
+</body>
+</html>

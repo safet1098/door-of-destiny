@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Door of Destiny</title>
+  <style>
+    body {
+      background-image: url('blueroom.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: rgb(255, 242, 0);
+      text-shadow: 0 0 20px rgb(0, 26, 255);
+      text-align: center;
+      font-size: 6vw;
+      margin-top: 30px;
+    }
+
+    .text {
+      font-size: 2vw;
+      color: rgb(255, 230, 0);
+      text-shadow: 0 0 20px rgb(246, 255, 0);
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+
+    .choices {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 4vw;
+      flex-wrap: nowrap;
+    }
+
+    .labels {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 10px;
+      gap: 5vw;
+      font-size: 1.5vw;
+    }
+
+    .labels p {
+      color: rgb(0, 34, 255);
+      text-shadow: 0 0 20px rgb(234, 255, 0);
+      text-align: center;
+    }
+
+    #lightup, #dark {
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgb(251, 255, 0);
+      transition: 0.3s ease;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+    }
+
+    #lightup:hover, #dark:hover {
+      box-shadow: 0 0 20px rgb(0, 17, 255);
+      transform: scale(1.1);
+    }
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 8vw;
+      }
+
+      .text {
+        font-size: 4vw;
+      }
+
+      .choices {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .labels {
+        flex-direction: column;
+        align-items: center;
+        font-size: 4vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>A PATH OF WONDER</h1>
+  <p class="text">You hear footsteps approaching — someone (or something) is coming fast.<br>You must choose quickly:</p>
+
+  <div class="container">
+    <div class="choices">
+      <a href="lightup.html">
+        <img id="lightup" src="LIGHTUP.png" alt="Light Up">
+      </a>
+      <a href="dark.html">
+        <img id="dark" src="DARK.png" alt="Dark">
+      </a>
+    </div>
+
+    <div class="labels">
+      <p>🔥 light up way</p>
+      <p>🕸️ dark
